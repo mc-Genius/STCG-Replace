@@ -1,7 +1,8 @@
+  <% content_for(:title, 'ログイン') %>
 <body class="hold-transition login-page">
 <div class="login-box">
 <div class="login-logo">
-  <h2>Log in</h2>
+   <a href="<%= sample_starter_path %>"><b>Sign</b>in</a>
 </div>
 <div class="login-box-body">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
